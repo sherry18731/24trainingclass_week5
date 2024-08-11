@@ -21,52 +21,344 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
     href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet">  <script type="module" crossorigin src="/24trainingclass_week5/assets/main-8fb2a326.js"></script>
-  <link rel="stylesheet" href="/24trainingclass_week5/assets/main-e523073d.css">
+    rel="stylesheet">  <script type="module" crossorigin src="/24trainingclass_week5/assets/main-2899c7dc.js"></script>
+  <link rel="stylesheet" href="/24trainingclass_week5/assets/main-6bc59780.css">
 </head>
 
 <body>
-  <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
+  <div class="d-flex">
+    <aside class="navbar navbar-expand navbar-light bg-light vh-100 position-fixed" style="width: 296px;">
+    <div class="flex-column align-items-start container-fluid px-0 py-4 h-100">
+        <div>
+            <h1>
+                <a class="navbar-brand container mb-4" href="#">
+                    <img src="/24trainingclass_week5/assets/logo-ANSWER-a11e3fef.svg" alt="logo">
+                </a>
+            </h1>
+            <ul class="navbar-nav d-flex flex-column fw-bold d-grid gap-3">
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 " aria-current="page" href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            analytics
+                        </span>
+                        Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 " href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            question_answer
+                        </span>Question</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 active border-success text-success "
+                        href="index.html">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            assignment
+                        </span>Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 " href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            video_library
+                        </span>Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 "
+                        href="admin.html">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            supervisor_account
+                        </span>Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3" href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            settings
+                        </span>Settings</a>
+                </li>
+            </ul>
+        </div>
 
-    <div class="card" style="width: 18rem">
-      <img src="/24trainingclass_week5/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
+
+        <div class="d-flex px-2">
+            <div class="flex-shrink-0">
+                <img src="/24trainingclass_week5/assets/photo-1514794749374-fb67509dbb7f-ebe1d081.avif" alt="host" class="rounded-circle  object-fit-cover
+                            " width="48" height="48">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <p class="fw-bold">Andy Chen</p>
+                <a class="text-secondary" href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+            </div>
+        </div>
     </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</aside>      <main class="p-4 content">
+        <!-- top -->
+        <nav class="navbar navbar-expand-lg mb-4">
+          <div class="w-100 d-flex justify-content-around">
+            <div class="container-fluid d-flex align-items-center">
+              <h2 class="navbar-brand fw-bold me-5" href="#">Assignment</h2>
+              <!-- Dropdown -->
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Courses<span class="material-symbols-outlined align-bottom text-success ms-1">
+                        expand_more
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- icons -->
+              <div class="d-flex">
+                <span class="material-symbols-outlined align-bottom me-4">
+                  search
+                </span>
+                <span class="material-symbols-outlined align-bottom">
+                  notifications_active
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </nav>
+        <!-- list-top -->
+        <div class="container-fluid d-flex justify-content-between mb-2">
+          <div class="dropdown">
+            <a class="ropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All (4)<span class="material-symbols-outlined align-bottom text-success ms-1">
+                expand_more
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <p class="text-secondary fs-s">2 comments</p>
+        </div>
+        <!-- list-content -->
+        <div class="container-fluid d-flex">
+          <!-- list-side -->
+          <div class="list-group rounded-0 me-2 w-25">
+            <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="mb-1 fs-s">Chapter Assignment 2</p>
+                <small class="d-inline-flex fs-s">4 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="fw-bold mb-1">Please check this file…</p>
+                <small class="text-secondary fs-s">Emily Wang</small>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="mb-1 fs-s">Chapter Assignment 1</p>
+                <small class="d-inline-flex fs-s">12 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="fw-bold mb-1">My Homework</p>
+                <small class="text-secondary fs-s">David Xu</small>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="mb-1 fs-s">Final Assignment</p>
+                <small class="d-inline-flex fs-s">18 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="fw-bold mb-1">Have a problem with this…</p>
+                <small class="text-secondary fs-s">Tony Wei</small>
+              </div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="mb-1 fs-s">Final Assignment</p>
+                <small class="d-inline-flex fs-s">19 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <p class="fw-bold mb-1">Did I do it right?</p>
+                <small class="text-secondary fs-s">Christina Lin</small>
+              </div>
+            </a>
+          </div>
+          <!-- list-inner -->
+          <!-- bug:這裡高度撐不開滿高度 -->
+          <div class="w-75">
+            <div class="card rounded-0 mb-3">
+              <div class="card-header d-flex align-items-center">
+                <div>
+                  <p class="fs-s">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <a href="#" class="ms-auto"><span class="material-symbols-outlined align-bottom">
+                    more_vert
+                  </span></a>
+              </div>
+
+              <div class="card-body">
+                <div class="d-flex px-2 mb-4">
+                  <div>
+                    <img src="/24trainingclass_week5/assets/photo-1504051771394-dd2e66b2e08f-e3d983ee.avif" alt="host" class="rounded-circle object-fit-cover
+                                    " width="40" height="40">
+                  </div>
+                  <div class="ms-3 border-bottom">
+                    <div class="mb-3">
+                      <p class="fw-bold mb-1">Emily Wang</p>
+                      <time class="text-secondary fs-s" datetime="">10:38 AM (4 hours ago)</time>
+                    </div>
+                    <p class="fs-m">Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                      question: Why in the
+                      following code the height of the <code>div</code> is bigger than the height of the
+                      <code>img</code>
+                      ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                    </p>
+                    <a href="#" class="btn btn-outline-secondary fw-bold text-secondary-emphasis rounded-0 my-3"
+                      download=""><span class="material-symbols-outlined align-bottom me-2">
+                        attach_file
+                      </span>HW-2-David.zip</a>
+                  </div>
+                </div>
+
+                <div class="px-2">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                      <img src="/24trainingclass_week5/assets/photo-1514794749374-fb67509dbb7f-ebe1d081.avif" alt="host" class="rounded-circle  object-fit-cover me-2
+                      " width="48" height="48">
+                      <div class="mb-3">
+                        <p class="fw-bold">Andy Chen (You)</p>
+                        <time class="text-secondary fs-s" datetime="">13:24 AM (1 hours ago)</time>
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#"><span class="material-symbols-outlined align-bottom me-2 icon-unfilled">
+                          star_rate
+                        </span></a>
+                      <a href="#"><span class="material-symbols-outlined align-bottom me-2">
+                          edit
+                        </span></a>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+
+                    <p class="fs-m">Hi Emily, by default, an image is rendered inline, like a letter so it sits on the
+                      same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q. <br><br>You can:<br><br>
+                    <ul>
+                      <li class="fs-m">adjust the <code>vertical-align</code> of the image to position
+                        it elsewhere
+                        (e.g. the <code>middle</code> ) or</li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- footer-btn -->
+            <div class="d-flex justify-content-between align-items-center position-relative">
+              <div>
+                <a href="#">
+                  <span class="material-symbols-outlined me-4">
+                    chevron_left
+                  </span>
+                </a>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </a>
+              </div>
+              <div class="ms-auto">
+                <butaton type="button" class="btn btn-outline-success me-3">Mark as read</butaton>
+                <button type="button" class="btn btn-success" data-bs-toggle="collapse" href="#replyCollapse"
+                  role="button" aria-expanded="false" aria-controls="replyCollapse">Reply</button>
+
+                <div class="collapse position-absolute bottom-0 end-0 w-100" id="replyCollapse">
+                  <div class="card card-header bg-light">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown  me-4">
+                        <a class="btn dropdown-toggle fw-bold" href="#" role="button" id="dropdownMenuLink"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Body Text
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="text-dark me-4">
+                        <span class="material-symbols-outlined align-middle">
+                          format_bold
+                        </span>
+                      </a>
+                      <a href="#" class="text-dark me-4">
+                        <span class="material-symbols-outlined align-middle">
+                          format_italic
+                        </span>
+                      </a>
+                      <a href="#" class="text-dark me-4">
+                        <span class="material-symbols-outlined align-middle">
+                          format_list_bulleted
+                        </span>
+                      </a>
+                      <a href="#" class="text-dark me-4">
+                        <span class="material-symbols-outlined align-middle">
+                          format_list_numbered
+                        </span>
+                      </a>
+                      <a href="#" class="text-dark me-4">
+                        <span class="material-symbols-outlined align-middle">
+                          image
+                        </span>
+                      </a>
+                      <a href="#" class="text-dark me-4">
+                        <span class="material-symbols-outlined align-middle">
+                          link
+                        </span>
+                      </a>
+                      <a href="#" class="text-dark">
+                        <span class="material-symbols-outlined align-middle">
+                          code
+                        </span>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="card card-body align-items-end rounded-0">
+                    <textarea class="w-100 border-0 text-secondary" name="textarea" id="textarea"
+                      style="resize: none; height: 200px;">Reply an answer…</textarea>
+                    <div>
+                      <button type="button" class="btn btn-outline-success me-3" data-bs-toggle="collapse"
+                        data-bs-target="#replyCollapse" aria-expanded="true" aria-controls="replyCollapse">
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">Reply</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </main>
+  </div>
 
-    <footer class="footer">我是 footer</footer>
-      
+  
 </body>
 
 </html>
