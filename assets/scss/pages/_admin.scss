@@ -15,3 +15,8 @@ nav.actived {
   background-color: $success;
   color: #fff;
 }
+
+.content {
+  width: calc(100% - 296px);
+  margin-left: auto;
+}

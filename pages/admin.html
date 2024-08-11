@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>contact</title>
+  <title>Admin</title>
   <%- include('./layout/head'); -%>
 </head>
 
@@ -33,12 +33,16 @@
             </div>
             <!-- icon -->
             <div class="d-flex align-items-center">
-              <span class="material-symbols-outlined align-bottom me-4">
-                search
-              </span>
-              <span class="material-symbols-outlined align-bottom">
-                notifications_active
-              </span>
+              <a href="#">
+                <span class="material-symbols-outlined align-bottom me-4">
+                  search
+                </span>
+              </a>
+              <a href="#">
+                <span class="material-symbols-outlined align-bottom">
+                  notifications_active
+                </span>
+              </a>
             </div>
           </div>
         </nav>
@@ -262,9 +266,9 @@
                   <p class="mb-1">#1</p>
                   <p>Admin</p>
                   <h4 class="mb-2">Emir Wicks</h4>
-                  <a href="mailto:emir.wicks@mail.com">emir.wicks@mail.com</a>
+                  <a class="text-secondary fs-m" href="mailto:emir.wicks@mail.com">emir.wicks@mail.com</a>
                   <div class="d-flex justify-content-between align-items-center mt-3">
-                    <a class="bg-light py-1 px-2" href="#" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                    <a class="bg-light py-1 px-2 fs-m" href="#" data-bs-toggle="modal" data-bs-target="#editAdmin">
                       Verified</a>
                     <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#show-but"
                       aria-expanded="false" aria-controls="collapseExample">
