@@ -1,0 +1,17 @@
+.collapsed .open {
+  display: inline-block;
+}
+.open {
+  display: none;
+}
+.collapsed .close {
+  display: none;
+}
+.close {
+  display: inline-block;
+}
+
+nav.actived {
+  background-color: $success;
+  color: #fff;
+}

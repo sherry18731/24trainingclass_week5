@@ -1,4 +1,64 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<aside class="navbar navbar-expand navbar-light bg-light vh-100 position-fixed" style="width: 296px;">
+    <div class="flex-column align-items-start container-fluid px-0 py-4 h-100">
+        <div>
+            <h1>
+                <a class="navbar-brand container mb-4" href="#">
+                    <img src="/assets/images/logo-ANSWER.svg" alt="logo">
+                </a>
+            </h1>
+            <ul class="navbar-nav d-flex flex-column fw-bold d-grid gap-3">
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 " aria-current="page" href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            analytics
+                        </span>
+                        Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 " href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            question_answer
+                        </span>Question</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 <%= page === 'assignment' ? 'active border-success text-success ' : '' %>"
+                        href="index.html">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            assignment
+                        </span>Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 " href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            video_library
+                        </span>Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3 <%= page === 'admin' ? 'active border-success text-success ' : '' %>"
+                        href="admin.html">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            supervisor_account
+                        </span>Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-3" href="#">
+                        <span class="material-symbols-outlined align-bottom ms-1 me-3">
+                            settings
+                        </span>Settings</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="d-flex px-2">
+            <div class="flex-shrink-0">
+                <img src="/assets/images/photo-1514794749374-fb67509dbb7f.avif" alt="host" class="rounded-circle  object-fit-cover
+                            " width="48" height="48">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <p class="fw-bold">Andy Chen</p>
+                <a class="text-secondary" href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+            </div>
+        </div>
+    </div>
+</aside>
